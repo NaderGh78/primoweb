@@ -1,0 +1,484 @@
+@media only screen and (max-width: 1023px) {
+
+    /* SART INTRO ============================= */
+
+    .justfCenter {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .intro .page_content {
+        bottom: 15%;
+        left: 1%;
+    }
+
+    .intro .intro_location {
+        width: 74%;
+    }
+
+    .intro .intro_location::before {
+        left: -25px;
+        font-size: 20px;
+        top: 0;
+    }
+
+    .intro .logo_animation::after {
+        border-top: 30vmin solid #fff;
+        border-right: 17vw solid transparent;
+        left: 10vw;
+        top: -102px;
+    }
+
+    .intro .logo_animation::before {
+        width: 59vmin;
+        height: 106px;
+        left: 10vw;
+        top: -205px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .intro .logo_animation img {
+        max-width: 40vmin;
+        position: absolute;
+        top: 19px;
+    }
+
+    .intro .logo_animation .hello_msg {
+        top: -196px;
+        left: 20vw;
+    }
+
+    .intro .logo_animation .hello_msg span {
+        font-size: 7vw;
+    }
+
+    span.span_icon,
+    span.go_previous {
+        right: 21px;
+        bottom: 17px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* END INTRO ============================= */
+
+
+    /*============================= START INFO */
+    .noPadding {
+        padding: 0 !important;
+    }
+
+    .top_menu {
+        top: 35px;
+    }
+
+    .top_menu .logo {
+        left: 19px;
+        top: -4px;
+    }
+
+    .top_menu .logo img {
+        width: 125px !important;
+        left: 19px !important;
+    }
+
+    .top_menu .my_menu h5 {
+        font-size: 15px !important;
+        margin-right: 5px !important;
+    }
+
+    ul.my_ul {
+        margin-right: 5vw !important;
+    }
+
+    ul.my_ul li,
+    ul.my_ul li:first-child {
+        width: 26px !important;
+    }
+
+    ul.my_ul li i {
+        font-size: 18px;
+    }
+
+    .vertical_text {
+        left: -15px;
+    }
+
+    span.equal {
+        font-size: 55px;
+        left: 9px;
+    }
+
+    span.curnt_page {
+        left: -43px !important;
+        font-size: 15px;
+    }
+
+    .myNav.openSidnav {
+        width: 310px;
+    }
+
+    .myNav .closebtn {
+        font-size: 30px;
+        left: 8px;
+        margin-left: 0;
+    }
+
+    .myNav img {
+        width: 125px;
+        left: 19px !important;
+    }
+
+    .myNav a {
+        font-size: 25px;
+    }
+
+    nav img {
+        width: 125px !important;
+        left: 19px !important;
+    }
+
+    .myNav a.activ_link.active::before {
+        top: -12px;
+    }
+
+    .page_content {
+        bottom: 14%;
+    }
+
+    .info .imgs img {
+        width: 174vmin;
+        top: 15vh;
+        left: -44%;
+    }
+
+    .info .page_content {
+        bottom: 7%;
+    }
+
+    .info .info_content_details {
+        margin-left: 0 !important;
+        width: 100%;
+        margin-top: -20vmin;
+        text-align: center;
+    }
+
+    .info_content_details h5,
+    .info_content_details h5 span,
+    .info_content_details strong {
+        font-size: 20px;
+    }
+
+    .info .info_content_details span {
+        margin-top: 0 !important;
+    }
+
+    /*============================= END INFO */
+
+    /*========== START SO_MEDIA ===========*/
+
+    .so_Media {
+        background-image: url(../images/sm_sml_bg.jpg) !important;
+        background-size: 100% 100%;
+    }
+
+    .so_Media .info_content_details {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .so_Media .info_content_details h5,
+    .so_Media .info_content_details h5 span {
+        font-size: 6vmin;
+    }
+
+    .so_Media .page_content {
+        bottom: 14%;
+    }
+
+    /*========== END SO_MEDIA ===========*/
+
+    /* START VISION ========================= */
+    .vision {
+        background-image: url(../images/viision_bg_small.png) !important;
+    }
+
+    .vision .page_content {
+        bottom: 6%;
+    }
+
+    .vision .page_content .info_content_details {
+        width: 100%;
+        left: 0 !important;
+        margin-right: 41px;
+        top: 51px;
+        text-align: right;
+    }
+
+    .vision .page_content .info_content_details span {
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+
+    .vision .info_content_details .h1,
+    .vision .info_content_details .h2 {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+    /* END VISION ========================= */
+
+    /* ======================================= START ABOUT US 1 */
+
+    .about_content .row {
+        height: 50vh !important;
+    }
+
+    .left_content {
+        height: 100vh !important;
+    }
+
+    .right_content_top,
+    .right_content_bott {
+        height: 50vh;
+    }
+
+    .right_content_top {
+        padding: 0;
+    }
+
+    .right_content_top div {
+        width: 83%;
+        margin: auto;
+    }
+
+    .right_content_top .row div {
+        width: 90%;
+    }
+
+    .right_content_top h4 {
+        font-size: 18px !important;
+        line-height: 1 !important;
+    }
+
+    .right_content_top p {
+        line-height: 1.2 !important;
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    /* ======================================= END ABOUT US 1 */
+
+    /* START ABOUT US 2 =============================== */
+
+    .about_us2 .right_content_top h4 {
+        font-size: 14px !important;
+    }
+
+    /* END ABOUT US 2 =============================== */
+
+    /* ====================================== START ABOUT US 3 */
+
+    .about_us3 .left_content .topC,
+    .about_us3 .left_content .botC {
+        height: 50vh;
+    }
+
+    .about_us3 .right_content .topC,
+    .about_us3 .right_content .botC {
+        height: 50vh;
+    }
+
+    .about_us3 h4 {
+        font-size: 18px !important;
+    }
+
+    .about_us3 p {
+        line-height: 1.2 !important;
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .about_us3 span.span_icon {
+        color: #fff !important;
+    }
+
+    /* ====================================== END ABOUT US 3 */
+
+    /* START CONTACT US ==================================== */
+
+    .contact_us .curnt_page {
+        width: 140px !important;
+        bottom: 61px;
+    }
+
+    .contact_us .right_content_top div {
+        width: 90% !important;
+    }
+
+    .contact_us .right_content_top div span {
+        font-size: 3vw;
+    }
+
+    .contact_us .right_content_top div span i {
+        width: 7vw !important;
+        height: 7vw !important;
+        line-height: 6vw !important;
+    }
+
+    /* END CONTACT US ==================================== */
+
+    /* ================================= START SERVICE */
+
+    .service .right_content_top,
+    .service .right_content_bott {
+        height: 50vh;
+    }
+
+    .service .right_content_top div {
+        width: 98% !important;
+    }
+
+    .service .left_content img {
+        width: 33vw;
+        left: 12vw;
+        top: 47vh;
+    }
+
+    .service img.middle_img {
+        width: 22%;
+    }
+
+    .service .right_text h3.h1 {
+        font-size: 4vw !important;
+        margin-bottom: 1vw;
+    }
+
+    .service .right_content_top p {
+        margin-bottom: 0 !important;
+        font-size: 3vw !important;
+    }
+
+    .service .right_text .carousel-item {
+        top: 0;
+    }
+
+    .service .right_text .carousel-item span {
+        font-size: 3vw !important;
+    }
+
+    .service .right_text .carousel-control-next {
+        top: 100%;
+        right: 21vw !important;
+    }
+
+    .service .right_text .carousel-control-next-icon:after {
+        font-size: 21px;
+        top: -4px;
+        left: 9px;
+    }
+
+    /* ================================= END SERVICE */
+
+    /* START WORK GALLERY ========================== */
+
+    .work_gallery {
+        overflow-y: auto !important;
+    }
+
+    .work_gallery .all_handler .all_handler_content span a {
+        font-size: 3.5vw;
+        display: block;
+        padding: 0px 10px;
+    }
+
+    .work_gallery .all_handler .all_handler_content h5 {
+        font-size: 4.5vw;
+    }
+
+    /* END WORK GALLERY ========================== */
+
+    /* START OUR WORKS ============================ */
+
+    .our_works .right_content_top p {
+        margin-bottom: 0 !important;
+    }
+
+    .our_works span.curnt_page {
+        left: -56px !important;
+        color: #fff;
+    }
+
+    .our_works span.equal {
+        color: #fff;
+    }
+
+    .our_works .right_content_top div {
+        width: 90% !important;
+    }
+
+    .our_works .right_content_top div span a {
+        font-size: 3vw;
+        padding: 0 9px;
+        display: block;
+        margin-top: 4vmin;
+    }
+
+    .our_works .right_content_bott img {
+        width: 39vw;
+    }
+
+    .our_works .left_content {
+        background-position: bottom left;
+        background-position-x: -105px;
+    }
+
+    /* END OUR WORKS ============================ */
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+    .service .right_content_top p {
+        font-size: 2vw;
+    }
+
+    .service .left_content img {
+        left: 12vw;
+        top: 38vh;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .about_content .row {
+        height: 100vh !important;
+    }
+
+    .left_content {
+        height: 100vh !important;
+    }
+
+    .right_content_top,
+    .right_content_bott {
+        height: 50vh;
+    }
+
+    .about_us3 .left_content .topC,
+    .about_us3 .left_content .botC {
+        height: 50vh;
+    }
+
+    .about_us3 .right_content .topC,
+    .about_us3 .right_content .botC {
+        height: 50vh;
+    }
+
+}

@@ -1,0 +1,903 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* DEFINE ALL FONTS */
+@font-face {
+    font-family: Nexa-Bold;
+    src: url('../fonts/Nexa-Bold.otf');
+}
+
+@font-face {
+    font-family: Opificio;
+    src: url('../fonts/Opificio.ttf');
+}
+
+@font-face {
+    font-family: Opificio_regular;
+    src: url('../fonts/Opificio_regular.otf');
+}
+
+@font-face {
+    font-family: icofont;
+    src: url('../fonts/icofont.ttf');
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: Opificio;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.all_sections {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.slider ul.main_ul,
+.slider ul.main_ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.slider ul.main_ul {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.slider ul.main_ul li {
+    position: relative;
+    overflow: hidden;
+    /*to hide the outside animation effect */
+}
+
+ul.my_ul li {
+    width: 35px !important;
+    line-height: 60px;
+    text-align: center;
+    color: #222;
+}
+
+ul.my_ul li i {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+ul.my_ul li:hover a {
+    color: #fff !important;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.top_menu {
+    position: relative;
+    top: 45px;
+}
+
+.top_menu .logo {
+    position: absolute;
+    left: 40px;
+    top: -14px;
+}
+
+.top_menu .logo img {
+    width: 230px;
+    cursor: pointer;
+}
+
+/* style the top menu of these section */
+.about_us1 .top_menu,
+.about_us2 .top_menu,
+.about_us3 .top_menu,
+.service .top_menu,
+.contact_us .top_menu,
+.our_works .top_menu,
+.work_gallery .top_menu {
+    position: absolute;
+    z-index: 1;
+}
+
+/* ============================================================================= */
+
+/* GENERAL STYLE */
+.logo_info img {
+    max-width: 240px;
+    width: 240px;
+    height: auto;
+}
+
+.info_content_details {
+    text-align: center;
+
+}
+
+.info .info_content_details {
+    margin-top: 200px;
+}
+
+.info_content_details h5,
+.info_content_details h5 span,
+.info_content_details strong {
+    font-size: 25px;
+}
+
+.new_line_color {
+    background-color: #fff !important;
+    opacity: .3;
+}
+
+.page_content {
+    position: absolute;
+    bottom: 18%;
+    width: 90%;
+    -webkit-transform: translate(6%, 23%);
+    transform: translate(6%, 23%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* =================================================================================================================================================================================================================================================================================================================================================== */
+
+span.span_icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid;
+    border-color: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 69px;
+    bottom: 35px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+span.span_icon i {
+    color: inherit;
+}
+
+span.span_icon:hover {
+    border-radius: 0 !important;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+/* HIDE ALL GREETINGS MSG , SHOW THEM BY JS */
+#helloMsg1,
+#helloMsg2,
+#helloMsg3 {
+    display: none;
+}
+
+/* ================================================================================================================= */
+
+/* =================== HERE START ALL SECTIONS========================== */
+/* ================================================================================================================= */
+
+/* START INTRO ================ */
+.intro {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro .intro_location {
+    position: relative;
+    top: 35px;
+    font-family: Opificio_regular;
+}
+
+/* add location */
+.intro .intro_location::before {
+    content: "\f3c5";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -46px;
+    color: #fff;
+    font-size: 32px;
+    top: -2px;
+}
+
+.intro .logo_animation .hello_msg {
+    position: absolute;
+    top: -330px;
+    left: 176px;
+}
+
+.intro .logo_animation .hello_msg span {
+    font-size: 44px;
+    font-family: Opificio_regular;
+    line-height: 1;
+}
+
+.intro .logo_animation img {
+    max-width: 260px;
+    height: auto;
+}
+
+.intro .page_content {
+    bottom: 8%;
+    left: 5%;
+}
+
+/* START CREATE THE P LETTER */
+.intro .logo_animation::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 240px;
+    background-color: #fff;
+    left: 70px;
+    top: -390px;
+    border-top-right-radius: 54px;
+    border-bottom-right-radius: 54px;
+}
+
+.intro .logo_animation::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 166px solid #fff;
+    border-right: 95px solid transparent;
+    left: 70px;
+    top: -156px;
+}
+
+/* END CREATE THE P LETTER */
+
+/* END INTRO ================ */
+
+/* START SIDENAV ===================================== */
+.myNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* myNav links style */
+.myNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-family: Opificio_regular;
+}
+
+.myNav a:hover {
+    color: #f1f1f1;
+}
+
+/* change the position of close btn */
+.myNav .closebtn {
+    position: absolute;
+    top: 51%;
+    left: 31px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* the div that content the equal sign and name of current page */
+.vertical_text {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    top: 0;
+    left: 17px;
+}
+
+span.equal {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 70px;
+    cursor: pointer;
+    position: absolute;
+    top: 46%;
+    left: -7px;
+}
+
+span.equal:hover {
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+span.curnt_page {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 163px;
+    bottom: 95px;
+    left: -50px;
+}
+
+.myNav img {
+    position: absolute;
+    width: 230px;
+    left: 40px !important;
+    top: 31px !important;
+    cursor: pointer;
+}
+
+.myNav a.activ_link.active {
+    position: relative;
+    color: #fff !important;
+}
+
+/* add the p img above every active link */
+.myNav a.activ_link.active::before {
+    content: url('../images/p_link.png');
+    position: absolute;
+    right: -15px;
+    top: -20px;
+}
+
+/* this class with open the sidenav */
+.myNav.openSidnav {
+    width: 600px;
+}
+
+/* END SIDENAV ===================================== */
+
+/* ===================== START INFO */
+.info {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info .imgs {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.info .imgs img {
+    position: absolute;
+    width: 80%;
+    top: 14%;
+    left: 17%;
+}
+
+/* ===================== END INFO */
+
+/* START so_Media ================ */
+.so_Media {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.so_Media .info_content_details {
+    position: absolute;
+    margin-left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.so_Media .info_content_details h5 {
+    font-family: Opificio_regular;
+}
+
+.so_Media .page_content {
+    bottom: 8%;
+}
+
+/* END so_Media ================ */
+
+/* ===================== START VISION */
+.vision {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vision .page_content {
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    bottom: 8%;
+}
+
+.vision .page_content .info_content_details {
+    margin-right: 60px;
+    text-align: right;
+}
+
+.vision .page_content .info_content_details h5,
+.vision .page_content .info_content_details h5 span {
+    font-size: 32px;
+}
+
+/* ===================== END VISION */
+
+/* START ABOUT US 1 ================ */
+.about_us1 .about_content {
+    height: 100vh;
+}
+
+.about_us1 .about_content .row {
+    height: 100vh;
+}
+
+.left_content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.right_content {
+    height: 100vh;
+}
+
+.right_content_top,
+.right_content_bott {
+    height: 50vh;
+}
+
+.right_content_bott {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* END ABOUT US 1 ================ */
+
+/* ===================== START ABOUT US 2 */
+
+.about_us2 .left_content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.about_us2 .right_content_bott {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ===================== END ABOUT US 2 */
+
+/* START ABOUT US 3 ================ */
+.about_us3 .about_content {
+    height: 100vh;
+}
+
+.about_us3 .left_content .topC,
+.about_us3 .left_content .botC {
+    height: 50vh;
+}
+
+.about_us3 .right_content .topC,
+.about_us3 .right_content .botC {
+    height: 50vh;
+}
+
+.about_us3 .left_content .topC {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_us3 .left_content .botC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about_us3 .right_content .topC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    background-color: #243b5a;
+    color: #fff;
+}
+
+.about_us3 .right_content .botC {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about_us3 .left_content {
+    background-image: none;
+}
+
+/* END ABOUT US 3 ================ */
+
+/* ===================== START OUR WORKS */
+.our_works span.curnt_page {
+    left: -26px;
+}
+
+.our_works .left_content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* content of our works */
+.our_works .left .left_content {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 24px;
+    width: 75%;
+    padding: 15px;
+}
+
+.our_works .left .left_content p {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'Opificio_regular';
+    font-weight: 800;
+}
+
+.our_works .left .left_content button {
+    letter-spacing: 3px;
+    border: 2px solid #dc3545;
+}
+
+.our_works .left .left_content button:hover {
+    background-color: transparent !important;
+    border: 2px solid #dc3545;
+}
+
+.our_works .left .left_content button i {
+    -webkit-transform: translateX(-45px);
+    transform: translateX(-45px);
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-left: 10px;
+    opacity: 0;
+}
+
+.our_works .left .left_content button:hover i {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.our_works .right_content_bott {
+    background-image: none;
+}
+
+.our_works .right_content_bott img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 29%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ===================== END OUR WORKS */
+
+/* START WORK GALLERY ================ */
+.all_handler {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.all_handler .all_handler_content {
+    height: 100%;
+    /*    overflow-y: auto;*/
+    overflow-y: hidden;
+}
+
+.img_handler {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img_handler {
+    position: relative;
+    overflow: hidden;
+}
+
+.img_handler .gallery_desc {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 225, 225, .6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    z-index: 2;
+}
+
+.no_pointer {
+    pointer-events: none;
+}
+
+.img_handler .gallery_desc a.section_target {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #000;
+    line-height: 44px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* SHOW THE CONTENT BY HOVER ON IMG */
+.img_handler:hover .gallery_desc {
+    top: 0;
+}
+
+.span_fixed {
+    position: fixed !important;
+}
+
+/* END WORK GALLERY ================ */
+
+
+/* STRAT SERVICE ================ */
+.service .left_content {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service .left_content img {
+    position: absolute;
+    top: 32%;
+    left: 33%;
+    width: 60%;
+}
+
+/* the small centered lamp img*/
+.service img.middle_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.service .right_content_bott {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service .right_text {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.service .right_text .carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.service .right_text .carousel .carousel-item span {
+    display: inline-block;
+    margin-bottom: 13px;
+    font-size: 25px;
+}
+
+.service .right_text .carousel .carousel-inner p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service .right_text .carousel .carousel-inner h3 {
+    font-size: 30px;
+}
+
+.service .right_text .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.service .right_text .carousel .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.service .right_text .carousel-item {
+    top: 0;
+}
+
+/* hide the default corousel arrow */
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+/* change the position of right arrow controller and give it some of style */
+.service .right_text .carousel-control-next {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 48%;
+    top: 100%;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+    background-color: #111 !important;
+    width: 25px;
+    height: 25px;
+}
+
+/* change the default right arrow controller */
+.service .right_text .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 25px;
+    color: #fff;
+    top: -8px;
+    left: 8px;
+    position: absolute;
+}
+
+/* END SERVICE ================ */
+
+/* =====================START CONTACT US */
+.contact_us .left_content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.contact_us .right_content_bott {
+    background-image: none;
+}
+
+.contact_us .right_img {
+    background-image: none;
+}
+
+.contact_us span.curnt_page {
+    width: 199px;
+}
+
+/* ===================== END CONTACT US */
+.wow {
+    visibility: hidden;
+}
+
+/* ================================================== END ALL ====================================================== */
