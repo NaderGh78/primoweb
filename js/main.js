@@ -17,6 +17,11 @@ $(document).ready(function () {
 
     var work_gallery = $('.work_gallery');
 
+
+    let vh = window.innerHeight * 0.01;
+
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     /*======================== START FUNCTIONS =================================*/
     /*
     - when click on rounded down arrow,or on any link inside the sidenav,the page will changes it heights  depend on it data scroll number, and it will close the sidenav as well after some time 
