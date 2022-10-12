@@ -9,7 +9,7 @@
     }
 
     .intro .page_content {
-        bottom: 15%;
+        bottom: 30%;
         left: 1%;
     }
 
@@ -52,6 +52,11 @@
 
     .intro .logo_animation .hello_msg span {
         font-size: 7vw;
+    }
+
+    span.span_top{
+        position: absolute;
+        top: 45px;
     }
 
     span.span_icon,
@@ -109,8 +114,8 @@
     }
 
     span.equal {
-        font-size: 55px;
-        left: 9px;
+        font-size: 30px;
+        left: 30px;
     }
 
     span.curnt_page {

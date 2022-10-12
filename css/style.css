@@ -347,6 +347,10 @@ span.equal {
     left: -7px;
 }
 
+span.equal i{
+    border: 2px solid #111;
+}
+
 span.equal:hover {
     color: #fff;
     -webkit-transition: .2s;
